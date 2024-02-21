@@ -1,0 +1,88 @@
+2/21/2024 1:02:38 PM	This log contains information about the import schema operation into project 'CostOfLivingDB' on computer 'DESKTOP-V8CB28C' by user 'jcb13'.
+2/21/2024 1:02:39 PM	Import of database schema has started.
+2/21/2024 1:02:44 PM	Gathering database credentials
+2/21/2024 1:02:44 PM	Gathering database options
+2/21/2024 1:02:44 PM	Gathering generic database scoped configuration option
+2/21/2024 1:02:44 PM	Gathering users
+2/21/2024 1:02:44 PM	Gathering roles
+2/21/2024 1:02:44 PM	Gathering application roles
+2/21/2024 1:02:44 PM	Gathering role memberships
+2/21/2024 1:02:44 PM	Gathering filegroups
+2/21/2024 1:02:44 PM	Gathering full-text catalogs
+2/21/2024 1:02:44 PM	Gathering assemblies
+2/21/2024 1:02:44 PM	Gathering certificates
+2/21/2024 1:02:44 PM	Gathering asymmetric keys
+2/21/2024 1:02:44 PM	Gathering symmetric keys
+2/21/2024 1:02:44 PM	Gathering encrypted symmetric keys
+2/21/2024 1:02:44 PM	Gathering schemas
+2/21/2024 1:02:44 PM	Gathering XML schema collections
+2/21/2024 1:02:44 PM	Gathering user-defined data types
+2/21/2024 1:02:44 PM	Gathering user-defined types
+2/21/2024 1:02:44 PM	Gathering table types
+2/21/2024 1:02:44 PM	Gathering unique keys for table types
+2/21/2024 1:02:44 PM	Gathering primary keys for table types
+2/21/2024 1:02:45 PM	Gathering indexes for table types
+2/21/2024 1:02:45 PM	Gathering check constraints for table types
+2/21/2024 1:02:45 PM	Gathering default constraints for table types
+2/21/2024 1:02:45 PM	Gathering partition functions
+2/21/2024 1:02:45 PM	Gathering partition schemes
+2/21/2024 1:02:45 PM	Gathering functions
+2/21/2024 1:02:45 PM	Gathering encrypted functions
+2/21/2024 1:02:45 PM	Gathering aggregates
+2/21/2024 1:02:45 PM	Gathering procedures
+2/21/2024 1:02:45 PM	Gathering encrypted procedures
+2/21/2024 1:02:45 PM	Gathering tables
+2/21/2024 1:02:45 PM	Gathering primary keys
+2/21/2024 1:02:45 PM	Gathering unique constraints
+2/21/2024 1:02:45 PM	Gathering foreign keys
+2/21/2024 1:02:45 PM	Gathering default constraints
+2/21/2024 1:02:45 PM	Gathering check constraints
+2/21/2024 1:02:45 PM	Gathering views
+2/21/2024 1:02:45 PM	Gathering encrypted views
+2/21/2024 1:02:45 PM	Gathering indexes
+2/21/2024 1:02:45 PM	Gathering statistics
+2/21/2024 1:02:45 PM	Gathering full-text index stoplists
+2/21/2024 1:02:45 PM	Gathering search property lists
+2/21/2024 1:02:45 PM	Gathering search properties
+2/21/2024 1:02:45 PM	Gathering full-text indexes
+2/21/2024 1:02:45 PM	Gathering column store indexes
+2/21/2024 1:02:45 PM	Gathering spatial indexes
+2/21/2024 1:02:45 PM	Gathering XML indexes
+2/21/2024 1:02:45 PM	Gathering Selective XML indexes
+2/21/2024 1:02:45 PM	Gathering encrypted triggers
+2/21/2024 1:02:45 PM	Gathering triggers
+2/21/2024 1:02:45 PM	Gathering encrypted and clr ddl triggers
+2/21/2024 1:02:45 PM	Gathering ddl triggers
+2/21/2024 1:02:45 PM	Creating edge constraints
+2/21/2024 1:02:45 PM	Gathering synonyms
+2/21/2024 1:02:45 PM	Gathering defaults
+2/21/2024 1:02:45 PM	Gathering data constraint uddt bindings
+2/21/2024 1:02:45 PM	Gathering rules
+2/21/2024 1:02:45 PM	Gathering data constraint uddt bindings
+2/21/2024 1:02:45 PM	Gathering message types
+2/21/2024 1:02:45 PM	Gathering queues
+2/21/2024 1:02:45 PM	Gathering contracts
+2/21/2024 1:02:45 PM	Gathering services
+2/21/2024 1:02:45 PM	Gathering event notifications
+2/21/2024 1:02:45 PM	Gathering remote service bindings
+2/21/2024 1:02:45 PM	Gathering broker priorities
+2/21/2024 1:02:45 PM	Gathering signatures
+2/21/2024 1:02:45 PM	Gathering compression options
+2/21/2024 1:02:45 PM	Gathering sequence types
+2/21/2024 1:02:45 PM	Gathering security policies
+2/21/2024 1:02:45 PM	Gather column encryption keys
+2/21/2024 1:02:45 PM	Gathering column master keys
+2/21/2024 1:02:45 PM	Gathering external data sources
+2/21/2024 1:02:45 PM	Gathering external file formats
+2/21/2024 1:02:45 PM	Gathering external tables
+2/21/2024 1:02:45 PM	Gathering XML index compression options
+2/21/2024 1:02:45 PM	Gathering extended properties
+2/21/2024 1:02:45 PM	Gathering assemblies
+2/21/2024 1:02:45 PM	Gathering credentials
+2/21/2024 1:02:45 PM	Gathering logins
+2/21/2024 1:02:45 PM	Gathering server audits
+2/21/2024 1:02:46 PM	Scanning project for duplicate elements
+2/21/2024 1:02:46 PM	Finished duplicate element processing
+2/21/2024 1:02:46 PM	Finished importing database.
+2/21/2024 1:02:46 PM	A summary of the import was saved to the following location: C:\Users\jcb13\source\repos\SWE6673_Project\CostOfLivingDB\Import Schema Logs\CostOfLivingDB_20240221060238.log
+2/21/2024 1:02:46 PM	Click Finish to continue...
