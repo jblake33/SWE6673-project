@@ -117,6 +117,8 @@ namespace DollarSense.Tests
         {
             // TODO: Test the connection to the currency converter API we are using.
             Assert.Fail();
+            double[] nums = { 0.1, -0.2 };
+            
         }
         #endregion
     }

@@ -18,10 +18,6 @@ namespace DollarSenseUI
             // "AddSingleton" means create one object and use that object throughout the application
             builder.Services.AddSingleton<WeatherForecastService>();
             // "AddTransient" means create an object every time it is asked for
-            builder.Services.AddTransient<ISQLDataAccess, SQLDataAccess>();
-            builder.Services.AddTransient<ICountryData, CountryData>();
-            builder.Services.AddTransient<IUSStateData, USStateData>();
-            builder.Services.AddTransient<IUSCityData, USCityData>();
 
 
             var app = builder.Build();
