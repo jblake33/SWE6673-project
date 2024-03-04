@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseUI\\DollarSenseUI.csproj": {}
+    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseDB\\DollarSenseDB.csproj": {
+    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseDB\\DollarSenseDB.csproj",
+        "projectUniqueName": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj",
         "projectName": "DollarSenseDB",
-        "projectPath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseDB\\DollarSenseDB.csproj",
+        "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj",
         "packagesPath": "C:\\Users\\jcb13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseDB\\obj\\",
+        "outputPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcb13\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseUI\\DollarSenseUI.csproj": {
+    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseUI\\DollarSenseUI.csproj",
+        "projectUniqueName": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj",
         "projectName": "DollarSenseUI",
-        "projectPath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseUI\\DollarSenseUI.csproj",
+        "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj",
         "packagesPath": "C:\\Users\\jcb13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseUI\\obj\\",
+        "outputPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcb13\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseDB\\DollarSenseDB.csproj": {
-                "projectPath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseDB\\DollarSenseDB.csproj"
+              "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj": {
+                "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj"
               }
             }
           }

@@ -10,3 +10,15 @@ C:\Users\jcb13\source\repos\SWE6673_Project\DollarSenseDB\obj\Debug\net6.0\Dolla
 C:\Users\jcb13\source\repos\SWE6673_Project\DollarSenseDB\obj\Debug\net6.0\refint\DollarSenseDB.dll
 C:\Users\jcb13\source\repos\SWE6673_Project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.pdb
 C:\Users\jcb13\source\repos\SWE6673_Project\DollarSenseDB\obj\Debug\net6.0\ref\DollarSenseDB.dll
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\bin\Debug\net6.0\DollarSenseDB.deps.json
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\bin\Debug\net6.0\DollarSenseDB.dll
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\bin\Debug\net6.0\DollarSenseDB.pdb
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.csproj.AssemblyReference.cache
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.AssemblyInfoInputs.cache
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.AssemblyInfo.cs
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.csproj.CoreCompileInputs.cache
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.dll
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\refint\DollarSenseDB.dll
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.pdb
+C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\ref\DollarSenseDB.dll

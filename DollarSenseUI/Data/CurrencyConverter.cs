@@ -13,5 +13,14 @@
             // "1 Euro equals 7.74 Chinese Yuan" so 7.74 is returned.
             return 0;
         }
+
+        /// <summary>
+        /// Returns true if connection to API is successful (i.e. data is returned).
+        /// </summary>
+        /// <returns></returns>
+        public static bool CheckConnection()
+        {
+            return false;
+        }
     }
 }

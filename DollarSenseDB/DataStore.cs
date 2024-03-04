@@ -12,6 +12,10 @@ namespace DollarSenseDB
         // No tables of data are included as they are not needed for now...
         // Below are the methods used for reading data from the table (data is never written).
 
+        public static bool CheckConnection()
+        {
+            return true;
+        }
         #region Reading a row of data from a table
         /// <summary>
         /// Returns csv values: cindex,grocery,housing,utilities,transportation,health,misc

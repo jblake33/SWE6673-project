@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CB1xVHS09/BCGENkRxVBR4bu5f/yNvyxMYgdVUnyspI32+DESsQQEXppr/0Ih2fiDYa/0bN4uSyaz9C3hY9+VA==",
+  "dgSpecHash": "4DQNGD66M5zIoanq9o6ZY632n7dpbARjTmFXRUk7a8JsYl0rox8iwufkK0oJOBuXYiV5a3rWIaPERlmFDCWs9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSense.Tests\\DollarSense.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\DollarSense.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcb13\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

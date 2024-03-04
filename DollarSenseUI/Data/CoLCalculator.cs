@@ -73,15 +73,5 @@
             // life in location 2 with salary 2.
             return new double[0];
         }
-
-        /// <summary>
-        /// Accepts a location and returns a char for which type of location it is. 'I' = international, 'C' = US City, 'S' = US state
-        /// </summary>
-        /// <param name="location"></param>
-        /// <returns></returns>
-        public static char ClassifyLocation(string location)
-        {
-            return 'c';
-        }
     }
 }

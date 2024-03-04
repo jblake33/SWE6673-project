@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sy18bRpjUzAcKRabAxzTtQrdWLDRGLpBLL2rJ6AVOLWoP1fsxPKXWU/UyNNJUHQYbalL7SsW5uRrSPjik+LDrw==",
+  "dgSpecHash": "Aaow3dq/NL16Ttku/3eVB5XXCpwMscaoNAQbrY8QJ36ND1PbeXAT9SX43tPYVzENA+rQtVVAVFYcG3EuV/JpIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcb13\\source\\repos\\SWE6673_Project\\DollarSenseUI\\DollarSenseUI.csproj",
+  "projectFilePath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",

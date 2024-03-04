@@ -1,4 +1,6 @@
+using DollarSenseDB;
 using DollarSenseUI.Data;
+using System.Diagnostics;
 
 namespace DollarSense.Tests
 {
@@ -13,123 +15,163 @@ namespace DollarSense.Tests
         // REQID = number given to requirement in the plan,
         // Desc = brief description/name of test
         [Test]
-        public void Test6_Submit1L1S()
+        public void Test6_Submit1L1S_Positive()
         {
-            // TODO: If the user has entered neither a second location nor a second salary, do not calculate a second cost of living value.
             double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000);
-            Assert.Positive(actual);     
-        }
-        [Test]
-        public void Test6_Submit1L1S_RangeTest()
-        {
-            // TODO: If the user has entered neither a second location nor a second salary, do not calculate a second cost of living value.
-            double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000);
-            Assert.LessOrEqual(actual,100);
-        }
-        [Test]
-        public void Test6_Submit1L2S()
-        {
-            // TODO: If the user has entered a second salary, but no second location, calculate a second cost of living value using the second salary and first location. 
-            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
-            for(int i = 0; i < actual.Length; ++i) {
-                if (actual[i] < 0) {
-                    Assert.Negative(actual[i]);
-                }
-            }
-        }
-        [Test]
-        public void Test6_Submit1L2S_RangeTest()
-        {
-            // TODO: If the user has entered a second salary, but no second location, calculate a second cost of living value using the second salary and first location. 
-            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
-            for(int i = 0; i < actual.Length; ++i) {
-                if (actual[i] > 100) {
-                    Assert.Greater(actual[i], 100);
-                }
-            }
-        }
-        [Test]
-        public void Test6_Submit1L2S_IsEmpty()
-        {
-            // TODO: If the user has entered a second salary, but no second location, calculate a second cost of living value using the second salary and first location. 
-            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
-            Assert.IsEmpty(actual);
-        }
-        [Test]
-        public void Test6_Submit2L0S()
-        {
-            // TODO: (Proposed) If the user has entered two locations and no salary, calculate a percentage difference in the cost of living from location 1 to location 2. 
-            double actual = CoLCalculator.GetCostOfLiving("Georgia", "NewYork");
-            Assert.Positive(actual);  
-        }
-        [Test]
-        public void Test6_Submit2L0S_RangeTest()
-        {
-            // TODO: (Proposed) If the user has entered two locations and no salary, calculate a percentage difference in the cost of living from location 1 to location 2. 
-            double actual = CoLCalculator.GetCostOfLiving("Georgia", "NewYork");
-            Assert.LessOrEqual(actual,100);
-        }
-        [Test]
-        public void Test6_Submit2L1S()
-        {
-            // TODO: If the user has entered a second location, but no second salary, calculate a second cost of living value using the second location and first salary. 
-            double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork");
-            Assert.Positive(actual);  
-        }
-        [Test]
-        public void Test6_Submit2L1S_RangeTest()
-        {
-            // TODO: If the user has entered a second location, but no second salary, calculate a second cost of living value using the second location and first salary. 
-            double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork");
-            Assert.LessOrEqual(actual,100);
-        }
-        [Test]
-        public void Test6_Submit2L2S_TestforNegative()
-        {
-            // TODO: If the user has entered a second location and second salary, calculate a second cost of living value using the second location and second salary. 
-            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork", 70000);
-            for(int i = 0; i < actual.Length; ++i) {
-                if (actual[i] < 0) {
-                    Assert.Negative(actual[i]);
-                }
-            }
-        }
-        public void Test6_Submit2L2S_IsEmpty()
-        {
-            // TODO: If the user has entered a second location and second salary, calculate a second cost of living value using the second location and second salary. 
-            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork", 70000);
-            Assert.IsEmpty(actual);
-        }
-        [Test]
-        public void Test6_Submit2L2S_RangeTest()
-        {
-            // TODO: If the user has entered a second location and second salary, calculate a second cost of living value using the second location and second salary. 
-            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork", 70000);
-            for(int i = 0; i < actual.Length; ++i) {
-                if (actual[i] > 100) {
-                    Assert.Greater(actual[i], 100);
-                }
-            }
-        }
-        [Test]
-        public void Test9_CurrencyConversion_TestifEmpty()
-        {
-            // TODO: (Proposed) A single currency conversion, done as a proof-of-concept. 
-            double actual = CurrencyConverter.GetExchangeRate("USD", "EUR");
-            Assert.IsEmpty(actual.ToString());
-        }
-        [Test]
-        public void Test9_CurrencyConversion_TestifNegative()
-        {
-            // TODO: (Proposed) A single currency conversion, done as a proof-of-concept. 
-            double actual = CurrencyConverter.GetExchangeRate("USD", "EUR");
             Assert.Positive(actual);
         }
         [Test]
+        public void Test6_Submit1L1S_NotLarge()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000);
+            Assert.LessOrEqual(actual, 100d);
+        }
+        public void Test6_Submit1L1S_Invalid()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("asd", 50000);
+            Assert.Equals(actual, -1d);
+        }
+        [Test]
+        public void Test6_Submit1L2S_Positive()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
+            bool noNegatives = true;
+            for (int i = 0; i < actual.Length; ++i)
+            {
+                if (actual[i] < 0d)
+                {
+                    noNegatives = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(noNegatives);
+        }
+        [Test]
+        public void Test6_Submit1L2S_NotLarge()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
+            bool noLargeVals = true;
+            for (int i = 0; i < actual.Length; ++i)
+            {
+                if (actual[i] > 100d)
+                {
+                    noLargeVals = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(noLargeVals);
+        }
+        [Test]
+        public void Test6_Submit1L2S_Invalid()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("asd", 1, 1);
+            Assert.IsTrue(actual.Length == 2 && (actual[0].ToString() + actual[1].ToString() == "-1-1"));
+        }
+        [Test]
+        public void Test6_Submit2L0S_Positive()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("Georgia", "New York");
+            Assert.Positive(actual);
+        }
+        [Test]
+        public void Test6_Submit2L0S_NotLarge()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("New York", "Georgia");
+            Assert.LessOrEqual(actual, 100d);
+        }
+        [Test]
+        public void Test6_Submit2L0S_Invalid()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("Georgia", "New York");
+            Assert.AreEqual(actual, -1d);
+        }
+        [Test]
+        public void Test6_Submit2L1S_Positive()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "New York");
+            Assert.Positive(actual);
+        }
+        [Test]
+        public void Test6_Submit2L1S_NotLarge()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "New York");
+            Assert.LessOrEqual(actual, 100d);
+        }
+        [Test]
+        public void Test6_Submit2L1S_Invalid()
+        {
+            double actual = CoLCalculator.GetCostOfLiving("asd", 50, "11");
+            Assert.AreEqual(actual, -1d);
+        }
+        [Test]
+        public void Test6_Submit2L2S_Positive()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "New York", 70000);
+            bool noNegatives = true;
+            for (int i = 0; i < actual.Length; ++i)
+            {
+                if (actual[i] < 0d)
+                {
+                    noNegatives = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(noNegatives);
+        }
+        [Test]
+        public void Test6_Submit2L2S_SameComparison()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 1, "Georgia", 1);
+            Assert.IsTrue(actual[1] == 1d && actual[0] == 1d);
+        }
+        [Test]
+        public void Test6_Submit2L2S_NotLarge()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork", 70000);
+            bool noLargeVals = true;
+            for (int i = 0; i < actual.Length; ++i)
+            {
+                if (actual[i] > 100d)
+                {
+                    noLargeVals = false;
+                    break;
+                }
+            }
+            Assert.IsTrue(noLargeVals);
+        }
+        [Test]
+        public void Test6_Submit2L2S_Invalid()
+        {
+            double[] actual = CoLCalculator.GetCostOfLiving("asd", 50000, "New York", 70000);
+            Assert.IsTrue(actual.Length == 2 && (actual[0].ToString() + actual[1].ToString() == "-1-1"));
+        }
+        [Test]
+        public void Test9_CurrencyConversion_Positive()
+        {
+            double actual = CurrencyConverter.GetExchangeRate("EUR", "CNY");
+            Assert.Positive(actual);
+        }
+        [Test]
+        public void Test9_CurrencyConversion_SameComparison()
+        {
+            double actual = CurrencyConverter.GetExchangeRate("EUR", "EUR");
+            Assert.AreEqual(actual, 1d);
+        }
+        [Test]
+        public void Test9_CurrencyConversion_Invalid()
+        {
+            // TODO: (Proposed) A single currency conversion, done as a proof-of-concept. 
+            double actual = CurrencyConverter.GetExchangeRate("no", "sir");
+            Assert.AreEqual(actual, -1d);
+        }
+        #endregion
+        #region UI tests
+        // The UI tests have been moved to a separate BUnit suite under the DollarSenseUI.Tests project.
+        /*
+        [Test]
         public void Test1_SelectLocation1()
         {
-            // TODO: Allow user to select from a list of US cities and states
-            Assert.Fail();
+            
         }
         [Test]
         public void Test2_SelectSalary1()
@@ -152,7 +194,7 @@ namespace DollarSense.Tests
         [Test]
         public void Test5_ClickSubmit()
         {
-            // TODO: Allow the user to submit their inputs to calculate a cost-of-living value. 
+
             Assert.Fail();
         }
         [Test]
@@ -179,6 +221,7 @@ namespace DollarSense.Tests
             // TODO: Display comparison information if a second cost-of-living value was calculated. 
             Assert.Fail();
         }
+        */
         #endregion
         #region System tests
         // Naming convention: Test_Desc, where:
@@ -187,14 +230,12 @@ namespace DollarSense.Tests
         [Test]
         public void Test_DBConnection()
         {
-            // TODO: Test the connection to our SQLite DB of cost of living data.
-            Assert.Fail();
+            Assert.IsTrue(DataStore.CheckConnection());
         }
         [Test]
         public void Test_APIConnection()
         {
-            // TODO: Test the connection to the currency converter API we are using.
-            Assert.Fail();
+            Assert.IsTrue(CurrencyConverter.CheckConnection());
         }
         #endregion
     }
