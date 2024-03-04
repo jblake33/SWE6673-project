@@ -7,7 +7,7 @@
         /// <summary>
         /// Returns a currency exchange rate multiplier. Both parameters must be valid ISO currency codes.
         /// </summary>
-        internal static double GetExchangeRate(string from, string to)
+        public static double GetExchangeRate(string from, string to)
         {
             // Example: from = "EUR", to = "CNY" finds how many CNY is equal to one EUR.
             // "1 Euro equals 7.74 Chinese Yuan" so 7.74 is returned.

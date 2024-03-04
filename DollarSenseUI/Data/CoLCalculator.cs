@@ -8,7 +8,7 @@
         /// <param name="location1"></param>
         /// <param name="salary1"></param>
         /// <returns></returns>
-        internal static double GetCostOfLiving(string location1, int salary1)
+        public static double GetCostOfLiving(string location1, int salary1)
         {
             // Requirement 6d
             // There's just one location and salary. Use these values and the cost of living data to determine
@@ -21,7 +21,7 @@
         /// <param name="location1"></param>
         /// <param name="location2"></param>
         /// <returns></returns>
-        internal static double GetCostOfLiving(string location1, string location2)
+        public static double GetCostOfLiving(string location1, string location2)
         {
             // (Proposed) Requirement 6e
             // There's two locations and no salary. Use these values and the cost of living data to determine
@@ -35,7 +35,7 @@
         /// <param name="salary1"></param>
         /// <param name="salary2"></param>
         /// <returns></returns>
-        internal static double[] GetCostOfLiving(string location1, int salary1, int salary2)
+        public static double[] GetCostOfLiving(string location1, int salary1, int salary2)
         {
             // Requirement 6b
             // There's one location and two salaries. Use these values and the cost of living data to determine
@@ -50,7 +50,7 @@
         /// <param name="salary1"></param>
         /// <param name="location2"></param>
         /// <returns></returns>
-        internal static double GetCostOfLiving(string location1, int salary1, string location2)
+        public static double GetCostOfLiving(string location1, int salary1, string location2)
         {
             // Requirement 6a
             // There's two locations and one salary. Use these values and the cost of living data to determine
@@ -65,7 +65,7 @@
         /// <param name="location2"></param>
         /// <param name="salary2"></param>
         /// <returns></returns>
-        internal static double[] GetCostOfLiving(string location1, int salary1, string location2, int salary2)
+        public static double[] GetCostOfLiving(string location1, int salary1, string location2, int salary2)
         {
             // Requirement 6c
             // There's two locations and two salaries. Use these values and the cost of living data to determine
@@ -79,7 +79,7 @@
         /// </summary>
         /// <param name="location"></param>
         /// <returns></returns>
-        internal static char ClassifyLocation(string location)
+        public static char ClassifyLocation(string location)
         {
             return 'c';
         }
