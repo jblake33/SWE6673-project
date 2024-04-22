@@ -22,3 +22,15 @@ C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\Dolla
 C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\refint\DollarSenseDB.dll
 C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.pdb
 C:\Users\jcb13\Source\Repos\SWE6673-project\DollarSenseDB\obj\Debug\net6.0\ref\DollarSenseDB.dll
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\bin\Debug\net6.0\DollarSenseDB.deps.json
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\bin\Debug\net6.0\DollarSenseDB.dll
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\bin\Debug\net6.0\DollarSenseDB.pdb
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.csproj.AssemblyReference.cache
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.AssemblyInfoInputs.cache
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.AssemblyInfo.cs
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.csproj.CoreCompileInputs.cache
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.dll
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\refint\DollarSenseDB.dll
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\DollarSenseDB.pdb
+C:\Users\antho\OneDrive\Documents\Desktop\Group1\1\DollarSenseDB\obj\Debug\net6.0\ref\DollarSenseDB.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\DollarSense.Tests.csproj": {}
+    "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSense.Tests\\DollarSense.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\DollarSense.Tests.csproj": {
+    "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSense.Tests\\DollarSense.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\DollarSense.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSense.Tests\\DollarSense.Tests.csproj",
         "projectName": "DollarSense.Tests",
-        "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\DollarSense.Tests.csproj",
+        "projectPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSense.Tests\\DollarSense.Tests.csproj",
         "packagesPath": "C:\\Users\\jcb13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\obj\\",
+        "outputPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSense.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcb13\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj": {
-                "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj"
+              "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI\\DollarSenseUI.csproj": {
+                "projectPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI\\DollarSenseUI.csproj"
               }
             }
           }
@@ -38,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -76,42 +71,27 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj": {
+    "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\DollarSenseDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj",
+        "projectUniqueName": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\DollarSenseDB.csproj",
         "projectName": "DollarSenseDB",
-        "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj",
+        "projectPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\DollarSenseDB.csproj",
         "packagesPath": "C:\\Users\\jcb13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\obj\\",
+        "outputPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcb13\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -134,11 +114,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -156,42 +131,27 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj": {
+    "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI\\DollarSenseUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj",
+        "projectUniqueName": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI\\DollarSenseUI.csproj",
         "projectName": "DollarSenseUI",
-        "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\DollarSenseUI.csproj",
+        "projectPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI\\DollarSenseUI.csproj",
         "packagesPath": "C:\\Users\\jcb13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI\\obj\\",
+        "outputPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcb13\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -208,8 +168,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj": {
-                "projectPath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj"
+              "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\DollarSenseDB.csproj": {
+                "projectPath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\DollarSenseDB.csproj"
               }
             }
           }
@@ -218,11 +178,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -234,29 +189,10 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x86",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.21, 6.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -265,7 +201,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

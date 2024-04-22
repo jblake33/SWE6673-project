@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tKxM89jFq4ZeJDkHhjM9O4Y7gkIzOvyv0yzBl+Ws/jv4BaZwhLVlWvv6ityFm2mp8qds7ShgPQgl1n5//5tICA==",
+  "dgSpecHash": "0ltAHzRjkzga5KSwXP1SYO3A5dY8V0KsSPqhICmvf7ogctIMGzDyR9e1jiMVU1yJpZRpL+RSAkxjCCU19O262w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseUI.Tests\\DollarSenseUI.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseUI.Tests\\DollarSenseUI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcb13\\.nuget\\packages\\anglesharp\\1.1.0\\anglesharp.1.1.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\anglesharp.css\\1.0.0-beta.139\\anglesharp.css.1.0.0-beta.139.nupkg.sha512",
@@ -54,10 +54,7 @@
     "C:\\Users\\jcb13\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
+    "C:\\Users\\jcb13\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

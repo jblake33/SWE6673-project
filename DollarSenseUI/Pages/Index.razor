@@ -5,19 +5,66 @@
 <h1>DollarSense</h1>
 
 <form>
-	<select name="location1" id="location1" class="l1">
-	<option value="1">Georgia</option>
-	<option value="2">Alabama</option>
-	<option value="3">Florida</option>
-	<option value="4">Maine</option>
+	<select name="location1" id="location1" class="l1"  @onclick="selectedClickDummy">
+		<option value="1">Georgia</option>
+		<option value="2">Alabama</option>
+		<option value="3">Florida</option>
+		<option value="4">Maine</option>
 	</select>
-	<input type="number" id="salary1" name="salary1" class="s1" />
-	<select name="location2" id="location2" class="l2">
-	<option value="1">Georgia</option>
-	<option value="2">Alabama</option>
-	<option value="3">Florida</option>
-	<option value="4">Maine</option>
+	<input type="number" id="salary1" name="salary1" class="s1" @bind="salary1" @onclick="selectedClickDummy" />
+	<select name="location2" id="location2" class="l2"  @onclick="selectedClickDummy">
+		<option value="1">Georgia</option>
+		<option value="2">Alabama</option>
+		<option value="3">Florida</option>
+		<option value="4">Maine</option>
 	</select>
-	<input type="number" id="salary2" name="salary2" class="s2" />
-	<input type="submit" value="Submit" class="c2a">
+	<input type="number" id="salary2" name="salary2" class="s2" @bind="salary2" @onclick="selectedClickDummy" />
+	<button type="submit" class="c2a" @onclick="buttonSubmitted">Submit!</button>
 </form>
+
+@code {
+	public bool formFilledOut;
+	public bool showError = false;
+	public bool showSuccess = false;
+	public bool comparisonHidden = true;
+	public string salary1;
+	public string salary2;
+	public void buttonSubmitted () {
+		//this method is to make sure that salary fields are filled out
+		showError = false;
+		showSuccess = false;
+		comparisonHidden = true;
+
+		if (string.IsNullOrWhiteSpace(salary1) && string.IsNullOrWhiteSpace(salary2))
+		{
+			showError = true; // error message 
+		}
+		else
+		{
+			showSuccess = true; //success message
+			if (!string.IsNullOrWhiteSpace(salary1) && !string.IsNullOrWhiteSpace(salary2))
+			{
+				comparisonHidden = false;
+			}
+		}
+
+	}
+
+	public void selectedClickDummy()
+	{
+
+	}
+				
+}
+
+@if (showSuccess == true) //success message
+{
+	<p class="success">Cost of Living:</p>
+}
+@if (showError == true) //failuremessage
+{
+	<p class="fail">Error: Looks like you forgot something</p>
+}
+
+<p hidden="@comparisonHidden" class="compare2">Dummy comparison Value</p>
+

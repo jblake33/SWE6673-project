@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WU1awgX2DrXiTot4bKp7WIRc+4Fp4LXRhS6ytDTX5RjYiB2eFBASVZ7rYolHc01nKWJl4FyQvkKppOQ9K8Snog==",
+  "dgSpecHash": "2/buedgKWI88nGTnxRCkIYRnrX6iMUBqWUPAPekYlBUdNkLQpXZGiPlanQqieHbJq8En+qNp35SDtMM4VCxPyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSenseDB\\DollarSenseDB.csproj",
+  "projectFilePath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSenseDB\\DollarSenseDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
+    "C:\\Users\\jcb13\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

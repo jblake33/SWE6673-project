@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4DQNGD66M5zIoanq9o6ZY632n7dpbARjTmFXRUk7a8JsYl0rox8iwufkK0oJOBuXYiV5a3rWIaPERlmFDCWs9Q==",
+  "dgSpecHash": "00T5X4zfe7MH8060mEMyx5x0oq9uheR0MVOOW5D3HnGq2MjQ1Z6SSaW+LenaKe+BRQk6d6WQUKtbGd25HLsODw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcb13\\Source\\Repos\\SWE6673-project\\DollarSense.Tests\\DollarSense.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jcb13\\source\\repos\\DollarSense\\DollarSense.Tests\\DollarSense.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcb13\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
@@ -19,10 +19,7 @@
     "C:\\Users\\jcb13\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
     "C:\\Users\\jcb13\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\jcb13\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
+    "C:\\Users\\jcb13\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
