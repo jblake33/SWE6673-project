@@ -226,20 +226,163 @@ namespace DollarSense.Tests
         */
         #endregion
         #region System tests
-        // Naming convention: Test_Desc, where:
-        // Desc = brief description/name of test
-
-        [Test]
-        public void Test_DBConnection()
+[Test]
+public void Test_DBConnection()
+{
+    Assert.IsTrue(DataStore.CheckConnection());
+}
+[Test]
+public void Test_ReadsCountryNames()
+{
+    var list = DataStore.GetCountryNames();
+    Assert.IsTrue(list.Length > 0);
+}
+[Test]
+public void Test_ReadsStateNames()
+{
+    var list = DataStore.GetUSStateNames();
+    Assert.IsTrue(list.Length > 0);
+}
+[Test]
+public void Test_ReadsCityNames()
+{
+    var list = DataStore.GetUSCityNames();
+    Assert.IsTrue(list.Length > 0);
+}
+[Test]
+public void Test_CountryNamesAreCommaSeparated()
+{
+    var list = DataStore.GetCountryNames();
+    Assert.IsTrue(list.Split(',').Length > 1);
+}
+[Test]
+public void Test_StateNamesAreCommaSeparated()
+{
+    var list = DataStore.GetUSStateNames();
+    Assert.IsTrue(list.Split(',').Length > 1);
+}
+[Test]
+public void Test_CityNamesAreCommaSeparated()
+{
+    var list = DataStore.GetUSCityNames();
+    Assert.IsTrue(list.Split(',').Length > 1);
+}
+[Test]
+public void Test_Reads5CountryDataValues()
+{
+    var data = DataStore.GetCountryData("France");
+    Assert.IsTrue(data.Split(',').Length == 5);
+}
+[Test]
+public void Test_Reads7StateDataValues()
+{
+    var data = DataStore.GetUSStateData("Alabama");
+    Assert.IsTrue(data.Split(',').Length == 7);
+}
+[Test]
+public void Test_Reads5CityDataValues()
+{
+    var data = DataStore.GetUSCityData("Milwaukee");
+    Assert.IsTrue(data.Split(',').Length == 5);
+}
+[Test]
+public void Test_5CountryDataValuesAreNumbers()
+{
+    const int dv = 5;
+    var data = DataStore.GetCountryData("Germany");
+    string[] dataArr = data.Split(',');
+    bool numFlag = true;
+    // data array must have this many data values
+    if (dataArr.Length == dv)
+    {
+        for (int i = 0; i < dv; i++)
         {
-            Assert.IsTrue(DataStore.CheckConnection());
+            // all data values should be double numbers, otherwise it's invalid data
+            if (!double.TryParse(dataArr[i], out double _))
+            {
+                numFlag = false;
+            }
         }
-        [Test]
-        //we had difficult integrating the API; the return value now is true instead of false
-        public void Test_APIConnection()
+    }
+    else
+    {
+        numFlag = false;
+    }
+    Assert.IsTrue(numFlag);
+}
+[Test]
+public void Test_7StateDataValuesAreNumbers()
+{
+    const int dv = 7;
+    var data = DataStore.GetUSStateData("Colorado");
+    string[] dataArr = data.Split(',');
+    bool numFlag = true;
+    // data array must have this many data values
+    if (dataArr.Length == dv)
+    {
+        for (int i = 0; i < dv; i++)
         {
-            Assert.IsTrue(CurrencyConverter.CheckConnection());
+            // all data values should be double numbers, otherwise it's invalid data
+            if (!double.TryParse(dataArr[i], out double _))
+            {
+                numFlag = false;
+            }
         }
+    }
+    else
+    {
+        numFlag = false;
+    }
+    Assert.IsTrue(numFlag);
+}
+[Test]
+public void Test_5CityDataValuesAreNumbers()
+{
+    const int dv = 5;
+    var data = DataStore.GetUSCityData("Albequerque");
+    string[] dataArr = data.Split(',');
+    bool numFlag = true;
+    // data array must have this many data values
+    if (dataArr.Length == dv)
+    {
+        for (int i = 0; i < dv; i++)
+        {
+            // all data values should be double numbers, otherwise it's invalid data
+            if (!double.TryParse(dataArr[i], out double _))
+            {
+                numFlag = false;
+            }
+        }
+    }
+    else
+    {
+        numFlag = false;
+    }
+    Assert.IsTrue(numFlag);
+}
+[Test]
+public void Test_InvalidCountryDataReturnsEmpty()
+{
+    var data = DataStore.GetCountryData("s");
+    Assert.IsTrue(data.Length == 0);
+}
+[Test]
+public void Test_InvalidStateDataReturnsEmpty()
+{
+    var data = DataStore.GetUSStateData("w");
+    Assert.IsTrue(data.Length == 0);
+}
+[Test]
+public void Test_InvalidCityDataReturnsEmpty()
+{
+    var data = DataStore.GetUSCityData("e");
+    Assert.IsTrue(data.Length == 0);
+}
+[Test]
+public void Test_APIConnection()
+{
+    Assert.IsTrue(CurrencyConverter.CheckConnection());
+}
         #endregion
     }
 }
