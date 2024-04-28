@@ -16,25 +16,25 @@ namespace DollarSense.Tests
         // TODO: Add some extra tests for the currency converter and datastore
         // TODO: Clean up comments when finished
         [Test]
-        public void Test6_Submit1L1S_Positive()
+        public void Test_GetCostOfLiving_1Location_1Salary_Positive()
         {
             double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000);
             Assert.Positive(actual);
         }
         [Test]
-        public void Test6_Submit1L1S_NotLarge()
+        public void Test_GetCostOfLiving_1Location_1Salary_NotLarge()
         {
             double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000);
             Assert.LessOrEqual(actual, 100d);
         }
 		[Test] // [Test] was missing
-		public void Test6_Submit1L1S_Invalid()
+		public void Test_GetCostOfLiving_1Location_1Salary_Invalid()
 		{
 			double actual = CoLCalculator.GetCostOfLiving("asd", 50000);
 			Assert.AreEqual(actual, -1d); // Changed to AreEqual() since Equals() cannot be used here
 		}
 		[Test]
-        public void Test6_Submit1L2S_Positive()
+        public void Test_GetCostOfLiving_1Location_2Salary_Positive()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
             bool noNegatives = true;
@@ -49,7 +49,7 @@ namespace DollarSense.Tests
             Assert.IsTrue(noNegatives);
         }
         [Test]
-        public void Test6_Submit1L2S_NotLarge()
+        public void Test_GetCostOfLiving_1Location_2Salary_NotLarge()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, 40000);
             bool noLargeVals = true;
@@ -64,49 +64,50 @@ namespace DollarSense.Tests
             Assert.IsTrue(noLargeVals);
         }
         [Test]
-        public void Test6_Submit1L2S_Invalid()
+        public void Test_GetCostOfLiving_1Location_2Salary_Invalid()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("asd", 1, 1);
             Assert.IsTrue(actual.Length == 2 && (actual[0].ToString() + actual[1].ToString() == "-1-1"));
         }
         [Test]
-        public void Test6_Submit2L0S_Positive()
+        public void Test_GetCostOfLiving_2Location_Positive()
         {
             double actual = CoLCalculator.GetCostOfLiving("Georgia", "New York");
             Assert.Positive(actual);
         }
         [Test]
-        public void Test6_Submit2L0S_NotLarge()
+        public void Test_GetCostOfLiving_2Location_NotLarge()
         {
             double actual = CoLCalculator.GetCostOfLiving("New York", "Georgia");
             Assert.LessOrEqual(actual, 100d);
         }
 		[Test]
-		public void Test6_Submit2L0S_Invalid()
+		public void Test_GetCostOfLiving_2Location_Invalid()
 		{
 			double actual = CoLCalculator.GetCostOfLiving("Georiga", "New York"); // Added a typo to Georgia
-			Assert.AreEqual(actual, -1d);
+			// Assert.AreEqual(actual, -1d); // throwing warning
+            Assert.That(actual, Is.EqualTo(-1d));
 		}
 		[Test]
-        public void Test6_Submit2L1S_Positive()
+        public void Test_GetCostOfLiving_2Location_1Salary_Positive()
         {
             double actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "New York");
             Assert.Positive(actual);
         }
 		[Test]
-		public void Test6_Submit2L1S_NotLarge()
+		public void Test_GetCostOfLiving_2Location_1Salary_NotLarge()
 		{
 			double actual = CoLCalculator.GetCostOfLiving("New York", 60000, "Georgia"); // switched Georgia and New York, and also increased salary1 to 60000
 			Assert.LessOrEqual(actual, 100d);
 		}
 		[Test]
-        public void Test6_Submit2L1S_Invalid()
+        public void Test_GetCostOfLiving_2Location_1Salary_Invalid()
         {
             double actual = CoLCalculator.GetCostOfLiving("asd", 50, "11");
             Assert.AreEqual(actual, -1d);
         }
         [Test]
-        public void Test6_Submit2L2S_Positive()
+        public void Test_GetCostOfLiving_2Location_2Salary_Positive()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "New York", 70000);
             bool noNegatives = true;
@@ -121,13 +122,13 @@ namespace DollarSense.Tests
             Assert.IsTrue(noNegatives);
         }
         [Test]
-        public void Test6_Submit2L2S_SameComparison()
+        public void Test_GetCostOfLiving_2Location_2Salary_SameComparison()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 1, "Georgia", 1);
             Assert.IsTrue(actual[1] == 1d && actual[0] == 1d);
         }
         [Test]
-        public void Test6_Submit2L2S_NotLarge()
+        public void Test_GetCostOfLiving_2Location_2Salary_NotLarge()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("Georgia", 50000, "NewYork", 70000);
             bool noLargeVals = true;
@@ -142,7 +143,7 @@ namespace DollarSense.Tests
             Assert.IsTrue(noLargeVals);
         }
         [Test]
-        public void Test6_Submit2L2S_Invalid()
+        public void Test_GetCostOfLiving_2Location_2Salary_Invalid()
         {
             double[] actual = CoLCalculator.GetCostOfLiving("asd", 50000, "New York", 70000);
             Assert.IsTrue(actual.Length == 2 && (actual[0].ToString() + actual[1].ToString() == "-1-1"));
